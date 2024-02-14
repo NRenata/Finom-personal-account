@@ -1,0 +1,51 @@
+@import '~normalize.css/normalize';
+
+:root {
+    --navy-blue: #222B55;
+    --slate-gray: #7B829A;
+    --salmon-pink: #FF5762;
+    --pure-white: #FFFFFF;
+    --royal-blue: #415DE8;
+    --light-blue: #758FF0;
+    --light-gray: #C4C4C4;
+    --off-white: #EBECF0;
+    --warm-gray: #AFB3C0;
+    --deep-black: #000000;
+    --light-black-20: rgba(0, 0, 0, 0.2); /* 20% opacity */
+    --light-navy-8: rgba(34, 43, 85, 0.08); /* 8% opacity */
+    --light-royal-12: rgba(65, 93, 232, 0.12); /* 12% opacity */
+    --soft-gray: #F4F5F6;
+    --baby-blue: #F5F8FF;
+    --light-salmon: #ece9e9;
+}
+
+body {
+    background-color: var(--soft-gray);
+    color: var(--navy-blue);
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+button {
+    background-color: var(--royal-blue);
+    color: var(--pure-white);
+}
+
+button:hover {
+    background-color: var(--light-royal-12);
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: inherit;
+    font-weight: 700;
+}

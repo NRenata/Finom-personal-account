@@ -1,0 +1,21 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "importOrder": [
+    "^constants",
+    "^components",
+    "^sp-redux",
+    "^(graphql|utils)",
+    "^[./].*(?<!\\.scss)$",
+    "^styles",
+    "\\.scss$"
+  ],
+  "importOrderSeparation": true
+}

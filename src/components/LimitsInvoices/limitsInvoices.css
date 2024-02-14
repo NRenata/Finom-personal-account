@@ -1,0 +1,58 @@
+.limits-invoices {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    gap: 44px;
+    height: 252px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(34, 43, 85, 0.03), 0 8px 12px rgba(52, 53, 70, 0.02);
+    border-radius: 16px;
+}
+
+.limits-invoices-status-bars {
+    height: auto;
+}
+
+.limits-invoices-status-bar-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.limits-status-bar {
+    width: 312px;
+}
+
+@media only screen and (max-width: 1124px) {
+    .limits-invoices-status-bars {
+        width: 665px;
+    }
+
+    .limits-invoices-status-bar-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+        margin-bottom: 32px;
+    }
+    .limits-status-bar {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1119px) {
+    .limits-invoices {
+        padding: 40px 60px;
+        gap: 44px;
+        height: 345px;
+        min-width: 345px;
+        max-width: 445px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .limits-invoices {
+        min-width: 210px;
+        max-width: 445px;
+    }
+}

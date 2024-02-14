@@ -1,0 +1,47 @@
+.button {
+    width: 135px;
+    height: 32px;
+    padding: 8px 16px 8px 13px;
+    border-radius: 8px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #415DE8;
+    letter-spacing: 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.button--small {
+    width: 85px;
+}
+
+.button--large {
+    width: 165px;
+}
+
+.button--text-blue {
+    color: var(--royal-blue);
+}
+
+.button--text-white {
+    color: var(--pure-white);
+}
+
+.button--light-royal-12 {
+    background-color: var(--light-royal-12);
+}
+
+.button--salmon-pink {
+    background-color: var(--salmon-pink);
+}
+
+.button--royal-blue {
+    background-color: var(--royal-blue);
+}

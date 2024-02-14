@@ -1,0 +1,269 @@
+.limits-block-container {
+    padding: 40px 60px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(34, 43, 85, 0.03), 0px 8px 12px rgba(52, 53, 70, 0.02);
+    border-radius: 16px;
+    gap: 10px;
+    width: 665px;
+}
+
+.monthly-plan h2, .premium-plan h2 {
+    font-size: 36px;
+    color: #222B55;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    color: #222B55;
+    margin: -3px 0 1px 0;
+    line-height: 36.6px;
+}
+
+.price span {
+    color: #222B55;
+    font-size: 20px;
+}
+
+.billing-details {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    width: 463px;
+}
+
+.billing-info, .save-info, .features-list p, .price-tag .price, .price-tag .billing-option {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7B829A;
+    line-height: 14px;
+}
+
+.billing-card {
+    color: #415DE8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.change-plan {
+    color: #415DE8;
+    text-decoration: none;
+    margin-bottom: 11px;
+}
+
+.button--switch-plan {
+    display: flex;
+    align-items: center;
+}
+
+.save-info {
+    margin-left: 17px;
+    color: #222B55;
+}
+
+.premium-plan__head {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222B55;
+    line-height: 43.2px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(34, 43, 85, 0.08);
+    width: 664px;
+    height: 1px;
+    margin: 35px 0 40px 0;
+}
+
+.switch-plan, .upgrade-plan {
+    background-color: #FF5762;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.switch-plan:hover, .upgrade-plan:hover {
+    background-color: #e04f5f;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-tag, .limits-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-tag .price {
+    color: #415DE8;
+    font-weight: 700;
+}
+
+.price-tag .billing-option {
+    color: #7B829A;
+    font-weight: 400;
+    text-align: right;
+}
+
+.upgrade-plan {
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+
+.premium-plan-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 254px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.premium-plan {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #F5F8FF;
+    padding: 24px 40px;
+}
+
+.premium-plan__pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.premium-plan__billing-info {
+    font-size: 12px;
+    color: #7B829A;
+    text-align: end;
+    margin-bottom: auto;
+    line-height: 16px;
+}
+
+.premium-plan__price {
+    font-size: 24px;
+    margin: 13px 0 0;
+}
+
+.premium-plan__title {
+    color: #415DE8;
+    font-size: 24px;
+    margin: 5px 0 16px 0;
+}
+
+
+.premium-plan__icon {
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.premium-plan__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.premium-plan__item {
+    display: flex;
+    align-items: center;
+    width: 298px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    padding: 2px;
+}
+
+.premium-plan__check {
+    padding-left: 3px;
+    padding-right: 9px;
+}
+
+@media only screen and (max-width: 1124px) {
+    /* Стили для экранов узких, чем 1124px */
+    .limits-block-container, .divider, .limits-head {
+        width: 526px;
+    }
+    .premium-plan__icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1119px) {
+    /* Стили для экранов узких, чем 1119px */
+    .limits-block-container, .divider, .limits-head, .billing-details, .premium-plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 365px;
+    }
+
+    .premium-plan__pricing, .premium-plan__details, .premium-plan__title, .premium-plan__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .premium-plan__billing-info {
+        text-align: center;
+    }
+
+    .premium-plan__list {
+        padding-left: 79px;
+    }
+
+    .premium-plan__upgrade-button, .premium-plan__price {
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Стили для экранов узких, чем 767px */
+    .limits-block-container, .divider, .limits-head, .billing-details, .premium-plan {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .premium-plan__icon {
+        display: none;
+    }
+
+    .premium-plan__pricing, .premium-plan__details, .premium-plan__title, .premium-plan__list, .button--switch-plan {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .premium-plan__billing-info, .button--switch-plan  {
+        text-align: center;
+    }
+
+    .premium-plan__list {
+        padding-left: 79px;
+    }
+
+    .premium-plan__upgrade-button, .premium-plan__price {
+        margin-top: 24px;
+    }
+
+}

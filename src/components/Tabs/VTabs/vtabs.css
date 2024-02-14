@@ -1,0 +1,62 @@
+.tabs-container {
+    filter: drop-shadow(0px 1px 3px rgba(34, 43, 85, 0.03)) drop-shadow(0px 8px 12px rgba(52, 53, 70, 0.02));
+    background: #FFFFFF;
+    width: 304px;
+    height: 424px;
+    padding: 32px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 16px;
+}
+
+.tab-section {
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.tab-title-section-personal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #7B829A;
+    margin-bottom: 5px;
+}
+
+.tab-title-section-company {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #7B829A;
+    margin-bottom: 17px;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-item:hover {
+    color: #7B829A;
+}
+
+.tab-item.selected {
+    color: #222B55;
+    font-weight: bold;
+}
+
+.tab-indicator {
+    position: absolute;
+    left: 0; /* Выравнивание индикатора по левому краю */
+    width: 4px; /* Ширина индикатора */
+    background-color: #FF5762; /* Цвет индикатора */
+    transition: top 0.3s ease-out, height 0.3s ease-out; /* Плавная анимация для перемещения и изменения размера */
+}
