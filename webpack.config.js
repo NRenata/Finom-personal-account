@@ -84,7 +84,7 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
         new HtmlWebpackPlugin({
-            template: './public/index.html',
+            template: './index.html',
         }),
     ],
 };
