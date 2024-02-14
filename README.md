@@ -42,6 +42,7 @@ npm run build
 
 ## 📍Demo
 The project is deployed and available at the following link:
+https://nrenata.github.io/Finom-personal-account/
 
 ![Design mockup](src/assets/images/Frame.png "Design Mockup")
 
