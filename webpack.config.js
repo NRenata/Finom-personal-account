@@ -18,7 +18,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         clean: true,
     },
 
@@ -84,7 +84,7 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './public/index.html',
         }),
     ],
 };
