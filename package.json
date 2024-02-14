@@ -1,4 +1,8 @@
 {
+  "name": "finom",
+  "version": "1.0.0",
+  "description": "Task for Finom",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --open --mode development"
