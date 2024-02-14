@@ -9,6 +9,7 @@ import Union from '../../assets/icons/union.svg';
 import BurgerMenuIcon from '../../assets/icons/hamburger-menu.svg';
 import CloseIcon from '../../assets/icons/close.svg';
 import { Button } from '../../components/Button';
+import confetti from 'canvas-confetti';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -46,9 +47,15 @@ export const Header: React.FC = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+  const makeConfetti = () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  };
 
-
-    return (
+  return (
         <header className="header">
           <div className="header__logo">
               <Logo />
@@ -70,18 +77,18 @@ export const Header: React.FC = () => {
                         </ul>
                     </div>
                     <nav className="header__menu-links">
-                        <a href="/" className="header-menu__link">Money</a>
-                        <a href="/" className="header-menu__link">Team</a>
-                        <a href="/" className="header-menu__link">Cards</a>
-                        <a href="/" className="header-menu__link">Help center</a>
+                        <a href="https://en.wikipedia.org/wiki/Money" target="_blank" className="header-menu__link">Money</a>
+                        <a href="https://www.imdb.com/title/tt0386676/" target="_blank" className="header-menu__link">Team</a>
+                        <a href="https://www.kinopoisk.ru/film/522/?utm_referrer=www.google.com" target="_blank" className="header-menu__link">Cards</a>
+                        <a href="https://help.finom.co/en/" target="_blank" className="header-menu__link">Help center</a>
                         <div className='header-menu__button'>
                             <GiftTwo />
-                            <a href="/" className="header-menu__link icon">Invite your partners</a>
+                            <a href="https://finom.co/en-nl/about/" target="_blank" className="header-menu__link icon">Invite your partners</a>
                         </div>
                     </nav>
             </div>
             <div className="action-bar">
-                <Button className="action-bar__button" width="medium" color="light-royal-12" textColor="text-blue" icon={<RocketTwo />}>
+                <Button className="action-bar__button" width="medium" color="light-royal-12" textColor="text-blue" icon={<RocketTwo />} onClick={makeConfetti}>
                     Upgrade plan
                 </Button>
                   <div className={`company-selector ${isCompanySelectorOpen ? 'active' : ''}`} onClick={(e) => toggleMenu(e, 'companySelector')} ref={companySelectorRef}>
